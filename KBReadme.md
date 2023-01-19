@@ -60,4 +60,21 @@ Things that get turned in:
     What you plan on getting done by next week 
 
 
+To do next: 
+Check Datatypes
+Change Strings to Int
+Check for Dupes
+Remove Dupes 
+Determine if any data needs filtered 
+Count number of yeses for target columns 
+Determine % of yeses for target columns 
+use get_dummies for all columns 
+drop columns where necessary 
+
+
+
+Write to Training DataFrame
+
+
+
 
