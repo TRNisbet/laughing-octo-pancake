@@ -56,6 +56,13 @@ The initial review of the dataset showed that there were 22 columns, with 253,68
 |Education|Indicates the level of education that a respondant reports|
 |Income|Indicates the salary band that a respondant reports|
 
+### Data Exploration 
+There were no NaN(Null) values included in the dataset, so no records needed to be dropped.  
+
+The dataset was scanned for duplicates.  There werer 23899 records that were flagged by Python as a duplicate record. This was approximately 9.42% of the dataset. 'Duplicate' in this defintion would indicate all items were identical in the DataFrame.  However, because of the size of the dataset, and the consideration that many people could have the same results when surveyed. The team decided to build the model using a file that contains the potential duplicate records, and a file that has had them removed.  This will help determine if there is additional weighting being added to the 'duplicate' records as part of the prediction process. 
+
+
+
 ## Question to Answer
 
 
