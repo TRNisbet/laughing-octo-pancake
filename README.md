@@ -4,7 +4,7 @@
 #### Participants 
     - Kellie Brabec
     - Rachel Conner
-    - Tom Nesbit
+    - Tom Nisbet
     - Ash Seth
     - Andrew Stewart
 
@@ -33,7 +33,7 @@ The initial review of the dataset showed that there were 22 columns, with 253,68
 
 |Column Name|Description|
 |-----------|-----------|
-|Diabetes_Binary| Indicates if the respondant does not have diabetes or has been diagnosed with prediabetes or diabetes|
+|Diabetes_012| Indicates if the respondant does not have diabetes or has been diagnosed with prediabetes or diabetes|
 |HighBP|Indicates if the respondant has been diagnosed with high blood pressure|
 |HighChol|Indicates if the respondant has been diagnosed with high cholesterol|
 |CholCheck|Indicates if the respondant has had a cholesterol check in the past 5 years|
@@ -60,6 +60,13 @@ The initial review of the dataset showed that there were 22 columns, with 253,68
 There were no NaN(Null) values included in the dataset, so no records needed to be dropped.  
 
 The dataset was scanned for duplicates.  There werer 23899 records that were flagged by Python as a duplicate record. This was approximately 9.42% of the dataset. 'Duplicate' in this defintion would indicate all items were identical in the DataFrame.  However, because of the size of the dataset, and the consideration that many people could have the same results when surveyed. The team decided to build the model using a file that contains the potential duplicate records, and a file that has had them removed.  This will help determine if there is additional weighting being added to the 'duplicate' records as part of the prediction process. 
+
+### Binning 
+Due to the nature of the data in the dataset, the team decided that binning on selected columns was appropriate.  Binning was done as indicated below 
+
+|Column |Binning Notes|
+|-------|-------------|
+|Diabetes_012|Binned to include respondents in one of two buckets, indicating they alread|
 
 
 
