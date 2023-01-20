@@ -44,7 +44,9 @@ Here are the results from our meeting:
         - 16-20 Days
         - 21-25 Days
         - 26-30 Days
-    
+        
+https://github.com/TRNisbet/laughing-octo-pancake/blob/zoom_call_notes/Images/binning_code.png    
+The above image shows a screenshot of the code found to utilize for binning.
 
 ## Summary
 There are no null values to drop. We recommend running two models. One with the duplicates removed and one with the duplicates not removed. We are interested in the difference.
