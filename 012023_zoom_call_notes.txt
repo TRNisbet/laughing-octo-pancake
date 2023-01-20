@@ -45,7 +45,7 @@ Here are the results from our meeting:
         - 21-25 Days
         - 26-30 Days
         
-https://github.com/TRNisbet/laughing-octo-pancake/blob/zoom_call_notes/Images/binning_code.png    
+![binning_code](https://github.com/TRNisbet/laughing-octo-pancake/blob/zoom_call_notes/Images/binning_code.png)    
 The above image shows a screenshot of the code found to utilize for binning.
 
 ## Summary
