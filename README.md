@@ -66,11 +66,19 @@ Due to the nature of the data in the dataset, the team decided that binning on s
 
 |Column |Binning Notes|
 |-------|-------------|
-|Diabetes_012|Binned to include respondents in one of two buckets, indicating they alread|
+|Diabetes_012|Binned to include respondents in one of two buckets, indicating they already have a Diabetes diagnosis or they do not|
+|BMI|Binned to fall into one of 4 bins, (0-18.5, 18.5-24.9, 24.9-29.9, 29.9-100)|
+|MentHlth|Binned into one of 6 bins, 0-4 days, 5-9 days, 10-14 days, 15-19 days, 20-24 days, 25-30 days|
+|PhysHlth|Binned into one of 6 bins, 0-4 days, 5-9 days, 10-14 days, 15-19 days, 20-24 days, 25-30 days|
 
+Bins for BMI were determined based on CMS classification data definitions for underweight, normal, overweight and obese based on BMI.  Bins for Mental and Physical health dates were broken into 5 day increments by default. 
 
+Additional binning for age, income scale and education level were not done.  These elements were already binned in the source data, with those bins being defined in the Codebook associated with the original dataset.  (https://www.cdc.gov/brfss/annual_data/2015/pdf/codebook15_llcp.pdf)
 
 ## Question to Answer
+Based on the intial analysis of the data, and the goal of the project, the team will be attempting to answer the question "Should I be screened for Diabetes?" 
+
+This question and its related answer will be based on information that is entered into our interactive website that will be passed through the trained machine learning model.  The model will return a prediction for the Diabetes_status field, which will then indicate if the respondant should schedule a visit with their primary care provider for diabetes screening. 
 
 
 
