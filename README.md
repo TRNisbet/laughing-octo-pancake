@@ -28,6 +28,11 @@ The second dataset that was reviewed was the Heart Failure Prediction set (https
 ### Diabetes Data Set 
 The third dataset that was reviewed was the Binary Health Indicators dataset that is part of the Diabetes Health Indicators file (https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?select=diabetes_binary_health_indicators_BRFSS2015.csv)  This file includes questions that most non medical people would be able to answer about their health.  It also includes over 250,000 records, which after pre-processing, would be large enough to train a robust predictive model.  This data set is also based on telephone survey work completed by the Centers for Disease Control and Prevention, and has already been pre-processed to remove a great deal of the 'noise' that can be available in public datasets.  
 
+## Question to Answer
+Based on the intial analysis of the data, and the goal of the project, the team will be attempting to answer the question "Should I be screened for Diabetes?" 
+
+This question and its related answer will be based on information that is entered into our interactive website that will be passed through the trained machine learning model.  The model will return a prediction for the Diabetes_status field, which will then indicate if the respondant should schedule a visit with their primary care provider for diabetes screening.
+
 ## Data Overview 
 The initial review of the dataset showed that there were 22 columns, with 253,680 records.  The columns in the dataset are described below: 
 
@@ -75,10 +80,7 @@ Bins for BMI were determined based on CMS classification data definitions for un
 
 Additional binning for age, income scale and education level were not done.  These elements were already binned in the source data, with those bins being defined in the Codebook associated with the original dataset.  (https://www.cdc.gov/brfss/annual_data/2015/pdf/codebook15_llcp.pdf)
 
-## Question to Answer
-Based on the intial analysis of the data, and the goal of the project, the team will be attempting to answer the question "Should I be screened for Diabetes?" 
-
-This question and its related answer will be based on information that is entered into our interactive website that will be passed through the trained machine learning model.  The model will return a prediction for the Diabetes_status field, which will then indicate if the respondant should schedule a visit with their primary care provider for diabetes screening. 
+ 
 
 
 
