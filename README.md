@@ -68,9 +68,9 @@ The dataset was scanned for duplicates.  There werer 23899 records that were fla
 
 ### Duplicate Review and Removal 
 The team determined that they would process the original dataset three different ways.  
-> Raw Data - No duplicates were removed from the data, and binning was done on identified columns. (Data Processing - Raw Data Notebook)
-> Sample One - Duplicates were identified and removed prior to binning being done.  (Data Processing - Sample One Notebook)
-> Sample Two - Duplicates were identified and removed after binning was complete. (Data Processing - Sample Two Notebook)
+- Raw Data - No duplicates were removed from the data, and binning was done on identified columns. (Data Processing - Raw Data Notebook)
+- Sample One - Duplicates were identified and removed prior to binning being done.  (Data Processing - Sample One Notebook)
+- Sample Two - Duplicates were identified and removed after binning was complete. (Data Processing - Sample Two Notebook)
 
 ### Binning 
 Due to the nature of the data in the dataset, the team decided that binning on selected columns was appropriate.  Binning was done as indicated below 
