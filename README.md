@@ -66,6 +66,12 @@ There were no NaN(Null) values included in the dataset, so no records needed to 
 
 The dataset was scanned for duplicates.  There werer 23899 records that were flagged by Python as a duplicate record. This was approximately 9.42% of the dataset. 'Duplicate' in this defintion would indicate all items were identical in the DataFrame.  However, because of the size of the dataset, and the consideration that many people could have the same results when surveyed. The team decided to build the model using a file that contains the potential duplicate records, and a file that has had them removed.  This will help determine if there is additional weighting being added to the 'duplicate' records as part of the prediction process. 
 
+### Duplicate Review and Removal 
+The team determined that they would process the original dataset three different ways.  
+> Raw Data - No duplicates were removed from the data, and binning was done on identified columns. (Data Processing - Raw Data Notebook)
+> Sample One - Duplicates were identified and removed prior to binning being done.  (Data Processing - Sample One Notebook)
+> Sample Two - Duplicates were identified and removed after binning was complete. (Data Processing - Sample Two Notebook)
+
 ### Binning 
 Due to the nature of the data in the dataset, the team decided that binning on selected columns was appropriate.  Binning was done as indicated below 
 

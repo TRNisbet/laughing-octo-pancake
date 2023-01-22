@@ -1,0 +1,60 @@
+# January 20, 2023 Zoom Call Notes
+
+## Attendees
+- Kellie
+- Rachel
+- Tom
+
+## Purpose
+The purpose of this meeting was the following:
+- Review dataset:
+    - Any null values?
+    - Any duplicates?
+    - Can any columns be dropped?
+    - How are we binning:
+        - BMI
+        - MentHlth
+        - PhysHlth
+
+
+## Result
+Here are the results from our meeting:
+- There are no null values.
+- There are about 25,000 duplicates.
+- The lowest percentage of answers was around 4%.
+- We are binning:
+    - BMI:  
+        - "Underweight: less than 18.5"
+        - "Healthy: 18.5 - 24.9"
+        - "Overweight: 25 - 29.9"
+        - "Obese: 30 - higher"
+    - MentHlth:
+        - 0 Days
+        - 1-5 Days
+        - 6-10 Days
+        - 11-15 Days
+        - 16-20 Days
+        - 21-25 Days
+        - 26-30 Days
+    - PhysHlth:
+        - 0 Days
+        - 1-5 Days
+        - 6-10 Days
+        - 11-15 Days
+        - 16-20 Days
+        - 21-25 Days
+        - 26-30 Days
+        
+![binning_code](https://github.com/TRNisbet/laughing-octo-pancake/blob/zoom_call_notes/Images/binning_code.png)    
+The above image shows a screenshot of the code found to utilize for binning.
+
+## Summary
+There are no null values to drop. We recommend running two models. One with the duplicates removed and one with the duplicates not removed. We are interested in the difference.
+Based on the number of columns and the lowest percentage of answers, we do not recommend dropping any columns.
+The bins were determined based on the CDC guidlines for BMI and broken down into day counts for MentHlth and PhysHlth.
+
+## Misc. Notes
+- We will need a .md file on the top page of git hub with what each answer means.
+- Most binary questions will need an unknown, but might need to return a value of "not enough info" if to many are answered unknown.
+- Columns in df might not mirror the order on the website
+- Make sure in presentation to discuss the question of removing duplicates or similar answered question
