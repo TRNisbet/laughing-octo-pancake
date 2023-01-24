@@ -13,7 +13,16 @@ As the capstone project to the UNC DataAnalytics Bootcamp, students have been ch
     - Sketch it Out - Decide on the project, question to answer, and model.  This will result in a project prototype
     - Build and Assemble - The team will train the model, build any related databases, and create the interactive dashboard and presentation 
     - Put it all together - The team will finalize the model, database and dashboard, and present the final project to the cohort. 
+    
+## Communication Methodologies and Team Responsibilities
+The team will be communicating tasks and status via a dedicated Slack Channel.  Additionally, Zoom Calls will be held outside of classtime for the group to work together. 
 
+### Area Leads 
+    - Data Exploration and PreProcessing - Kellie Brabec and Rachel Conner
+    - UI Design and Development - Tom Nisbet 
+    - Machine Learning Modeling - Andrew Stewart 
+    - Data Visualizations - Ash Sheth
+    
 ### Topic 
 The team considered a number of different topics, from recipe selection based on likes/dislikes and available ingredients, lottery number predictions, and healthcare data analysis.  Various data sets were reviewed as part of the consideration process.  The team settled on the topic of healthcare screening predictions as their topic.  Based on available datasets, they selected diabetes prediction based on various factors.  With a team  member being part of the  Healthcare Industry and other team members having interest in the area, the team felt that there could be beneficial impact to investigating Machine Learning related to health status and other factors.  
 
@@ -85,5 +94,12 @@ Due to the nature of the data in the dataset, the team decided that binning on s
 Bins for BMI were determined based on CMS classification data definitions for underweight, normal, overweight and obese based on BMI.  Bins for Mental and Physical health dates were broken into 5 day increments by default. 
 
 Additional binning for age, income scale and education level were not done.  These elements were already binned in the source data, with those bins being defined in the Codebook associated with the original dataset.  (https://www.cdc.gov/brfss/annual_data/2015/pdf/codebook15_llcp.pdf)
+
+### Database Construction
+The team consulted with Kristina regarding the development of a database.  They were advised at that time that no free standing database would be needed for their project and that CSV files could be used without penalty. 
+
+## Machine Learning 
+The Machine Learning model is currently in design and development.  It will be included in week two. 
+
 
 
