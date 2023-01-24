@@ -18,6 +18,7 @@ As the capstone project to the UNC DataAnalytics Bootcamp, students have been ch
 The team will be communicating tasks and status via a dedicated Slack Channel.  Additionally, Zoom Calls will be held outside of classtime for the group to work together. 
 
 ### Area Leads 
+    - Team Coordinator -  Rachel Conner
     - Data Exploration and PreProcessing - Kellie Brabec and Rachel Conner
     - UI Design and Development - Tom Nisbet 
     - Machine Learning Modeling - Andrew Stewart 
