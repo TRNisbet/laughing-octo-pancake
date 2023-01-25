@@ -22,12 +22,10 @@
 |Questions we plan to answer        | Tues Jan 24 | Completed              |
 |Description of data                | Tues Jan 24 | Completed              |
 |Database-not needed                | Tues Jan 24 | Noted in Readme        |
-|At least 4 commits per team member | Tues Jan 24 | In Progress - see below|
-|Submit link to Bootcamp            | Tues Jan 24 | Awaiting full commits  |
+|At least 4 commits per team member | Tues Jan 24 | Completed              |
+|Submit link to Bootcamp            | Tues Jan 24 | Everyone submit tonight|
 
 
-    Awaiting commits from the following team members:
-    - Andrew: 4
 
 
 ## Status of each Area
