@@ -1,7 +1,7 @@
 # laughing-octo-pancake
 
 # UNC BootCamp Final Project Schedule and Progress
-*Updated Tuesday Jan 25*
+*Updated Wednesday Jan 25*
 
 ## Class Agenda Jan 25
     - Do we know time limit requirements of presentation?
