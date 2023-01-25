@@ -4,11 +4,15 @@
 *Updated Tuesday Jan 25*
 
 ## Class Agenda Jan 25
+    - Do we know time limit requirements of presentation?
+    - Go over schedule and what is expected from each person for each deadline.
     - Review visualizations provided by Ash and give feedback.
     - Review or start coding models and run data through at least one, once. 
+    - Discuss possible optimizations and set deadlines for them.
     - Make sure each team member has at least 12 commits.
     - Review Readme and add updates.
-    - Submit link for grading. 
+    - Submit link for Deliverable 1 for grading. 
+    
 
 ## Segment One Requirements
 
@@ -51,11 +55,11 @@
 |:---------------------------------:|:-----------:|:----------------------:|
 |Run model at least once            | Wed Jan 25  | Awaiting update on code|
 |8 total commits per team member    | Wed Jan 25  | See below for updates  |
-|Confusion matrix/accuracy score    | Wed Jan 55  | Awaiting update on code|
-|Detailed readme.md file            | Sun Jan 29  | review for updates     |
-|Questions we plan to answer        | Sun Jan 29  | review for updates     |
-|Description of data                | Sun Jan 29  | review for updates     |
-|Description of data exploration    | Sun Jan 29  | review for updates     |
+|Confusion matrix/accuracy score    | Wed Jan 25  | Awaiting update on code|
+|Detailed readme.md file            | Sun Jan 29  | Review for updates     |
+|Questions we plan to answer        | Sun Jan 29  | Review for updates     |
+|Description of data                | Sun Jan 29  | Review for updates     |
+|Description of data exploration    | Sun Jan 29  | Review for updates     |
 |Database-not needed                | Sun Jan 29  | Noted in Readme        |
 |Description of the analysis phase  | Sun Jan 29  | Will be noted in readme|
 |Desc tools used                    | Sun Jan 29  | Will ne noted in readme|
@@ -66,3 +70,32 @@
     - Andrew: 8
     *** I'd like to go ahead and get everyone their commits this evening so we do not have to wait for this. Everyone needs a total of 12 each for the whole project. 
 
+## Segment Three Requirements
+|Description                        |Date Due          |Status             |
+|:---------------------------------:|:-----------:|:----------------------:|
+|12 total commits per team member   | Wed Jan 25  | See below for updates  |
+|Confusion matrix/accuracy score    | Wed Jan 25  | Awaiting update on code|
+|Detailed readme.md file            | Sun Jan 29  | Review for updates     |
+|Questions we plan to answer        | Sun Jan 29  | Review for updates     |
+|Description of data                | Sun Jan 29  | Review for updates     |
+|Description of data exploration    | Sun Jan 29  | Review for updates     |
+|Database-not needed                | Sun Jan 29  | Noted in Readme        |
+|Description of the analysis phase  | Sun Jan 29  | Will be noted in readme|
+|Desc tools used                    | Sun Jan 29  | Will ne noted in readme|
+|Dashbrd with at lease 1 int. elem. | Sun Feb 5   | Tom is starting Jan 28 |
+|Results of the analyses            | Sun Feb 5   | Will be noted in readme|
+|Any recs for future analyses       | Sun Feb 5   | Will be noted in readme|
+|Anything done dif with more time   | Sun Feb 5   | Will be noted in readme|
+|Assign who is presenting what      | Sun Feb 5   | Note in readme?        |
+|Submit link to Bootcamp            | Sun Feb 5   | See above pending items|
+
+    Awaiting commits from the following team members:
+    - Ash: 2
+    - Andrew: 8
+    *** I'd like to go ahead and get everyone their commits this evening so we do not have to wait for this. Everyone needs a total of 12 each for the whole project. 
+
+## Class Agenda for Feb 6
+    Practice presenting: 
+    - All must present equally.
+    - Show interactivity of dashboard in real time.
+    - Must present within time limits set. Can we find that out?
