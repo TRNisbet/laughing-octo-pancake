@@ -17,7 +17,6 @@
 
 
     Awaiting commits from the following team members:
-    - Ash: 2
     - Andrew: 4
 
 
@@ -35,4 +34,7 @@
 
 ### Data Exploration (Kellie)
     - Kellie has processed and prepared the data for analysis and deep learning model (Jan 21).
+
+### Readme/Written Analysis
+Kellie updates the readme regularly and keeps detailed notes. If you have anything you wanted added to the readme reach out to her.
     
