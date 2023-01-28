@@ -4,15 +4,26 @@
 *Updated Wednesday Jan 25*
 
 ## Class Agenda Jan 25
-    - Do we know time limit requirements of presentation?
+    ~~- Do we know time limit requirements of presentation?~~
     - Go over schedule and what is expected from each person for each deadline.
     - Review visualizations provided by Ash and give feedback.
     - Review or start coding models and run data through at least one, once. 
     - Discuss possible optimizations and set deadlines for them.
-    - Make sure each team member has at least 12 commits.
+    - Make sure each team member has at least 12 commits - will probably have with no problem, on time.
     - Review Readme and add updates.
     - Submit link for Deliverable 1 for grading. 
-    
+
+Notes from Jan 25 Meeting
+    - Tom removing index from csv's for model efficiency and fixing dup... 
+    - We are not seeing that the dataset has less data after dups removed, etc. Tom is going to fix the file and push it up.
+    - Try Google Collab with the plot?
+    - We are using a logistic regression model.
+    - Whiteboarding tool?
+    - Tom has an idea for the website/dashboard
+    - Read up on seaborn
+    - 10 AM on Sunday
+    - 1 PM Saturday
+    - Friday - HTML
 
 ## Segment One Requirements
 
@@ -96,4 +107,8 @@
     Practice presenting: 
     - All must present equally.
     - Show interactivity of dashboard in real time.
-    - Must present within time limits set. Can we find that out?
+    - Must present within time limits set. (15 minutes)
+
+    For visualization presentation:
+
+    In our dataset 35% of the people surveyed have diabetes and also make over 75000 per year...
