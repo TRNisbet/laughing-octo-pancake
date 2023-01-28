@@ -13,7 +13,27 @@ body {
      
 }
 
-hr {
+/* {
+  "header": "ui-icon-triangle-1-e",
+  "activeHeader": "ui-icon-triangle-1-s"
+} */
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 100px;
+    width: 175px;
+    filter: invert(100%); 
+    /* outline: black; */
+    /* background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black; */
+}
+
+.graphcenter {
+    margin: 0 auto; 
+}
+
+/* hr {
     border-style: dotted none none;
     border-color: #94B49F;
     border-width: 5px;
@@ -46,4 +66,4 @@ hr {
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
-}
+} */
