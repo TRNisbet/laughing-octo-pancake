@@ -17,25 +17,27 @@ As the capstone project to the UNC DataAnalytics Bootcamp, students have been ch
 ## Communication Methodologies and Team Responsibilities
 The team will be communicating tasks and status via a dedicated Slack Channel.  Additionally, Zoom Calls will be held outside of classtime for the group to work together. 
 
+The team will be doing pair/group programming on zoom calls to streamline the development process and ensure that they progress towards project goals and milestones. 
+
 ### Area Leads 
     - Team Coordinator -  Rachel Conner
     - Data Exploration and PreProcessing - Kellie Brabec and Rachel Conner
     - UI Design and Development - Tom Nisbet 
     - Machine Learning Modeling - Andrew Stewart 
-    - Data Visualizations - Ash Sheth
+    - Data Visualizations - Kellie Brabec and Ash Seth
     
-### Topic 
+## Topic 
 The team considered a number of different topics, from recipe selection based on likes/dislikes and available ingredients, lottery number predictions, and healthcare data analysis.  Various data sets were reviewed as part of the consideration process.  The team settled on the topic of healthcare screening predictions as their topic.  Based on available datasets, they selected diabetes prediction based on various factors.  With a team  member being part of the  Healthcare Industry and other team members having interest in the area, the team felt that there could be beneficial impact to investigating Machine Learning related to health status and other factors.  
 
 ### Reasoning 
 The team reviewed three different datasets before selecting the source dataset for their project.   As part of the consideration for each data set, the team was looking for questions in the data that most non medical people would be able to answer about their own health, as well as a considerable number of records that would allow them to build a model that would have high accuracy for prediction.  
-#### Cancer Data Set 
+##### Cancer Data Set 
 The first file that was reviewed was the Lung Cancer Data Set (https://data.world/cancerdatahp/lung-cancer-data).  This data set had questions that most people shouuld be able to answer about their own health, however it only included 1000 records, which the team felt was not a large enough dataset to train a robust model for their project.  This data was not considered for use as part of this project. 
 
-### Cardiovascular Data Set 
+#### Cardiovascular Data Set 
 The second dataset that was reviewed was the Heart Failure Prediction set (https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction).  This data set included questions that most non medical people would not be able to answer about thier health, which made it less than ideal for use in a predictive model.  There were also only approximately 900 records in the dataset, which the team felt was not large enough to train a robust model. 
 
-### Diabetes Data Set 
+#### Diabetes Data Set 
 The third dataset that was reviewed was the Binary Health Indicators dataset that is part of the Diabetes Health Indicators file (https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?select=diabetes_binary_health_indicators_BRFSS2015.csv)  This file includes questions that most non medical people would be able to answer about their health.  It also includes over 250,000 records, which after pre-processing, would be large enough to train a robust predictive model.  This data set is based on telephone survey work completed by the Centers for Disease Control and Prevention, and has already been pre-processed to remove a great deal of the 'noise' that can be available in public datasets.  
 
 ## Question to Answer
@@ -71,12 +73,16 @@ The initial review of the dataset showed that there were 22 columns, with 253,68
 |Education|Indicates the level of education that a respondant reports|
 |Income|Indicates the salary band that a respondant reports|
 
-### Data Exploration 
+### Data Preprocessing and  Exploration Discussion 
+
+#### Null Value Checks
 There were no NaN(Null) values included in the dataset, so no records needed to be dropped.  
+
+#### Potential Duplicate Record Removal Apporoach 
 
 The dataset was scanned for duplicates.  There were 23899 records that were flagged by Python as a potential duplicate record. This was approximately 9.42% of the dataset. 'Duplicate' in this defintion would indicate all items were identical in the DataFrame.  However, because of the size of the dataset, and the consideration that many people could have the same results when surveyed. The team decided to build the model using a file that contains the potential duplicate records, and files that have had them removed.  This will help determine if there is additional weighting being added to the 'duplicate' records as part of the prediction process. 
 
-### Duplicate Review and Removal 
+##### Duplicate Review and Removal 
 The team determined that they would process the original dataset three different ways.  
 - Raw Data - No duplicates were removed from the data, and binning was done on identified columns. (Data Processing - Raw Data Notebook)
 - Sample One - Duplicates were identified and removed prior to binning being done.  (Data Processing - Sample One Notebook)
@@ -94,13 +100,57 @@ Due to the nature of the data in the dataset, the team decided that binning on s
 
 Bins for BMI were determined based on CMS classification data definitions for underweight, normal, overweight and obese based on BMI.  Bins for Mental and Physical health dates were broken into 5 day increments by default. 
 
-Additional binning for age, income scale and education level were not done.  These elements were already binned in the source data, with those bins being defined in the Codebook associated with the original dataset.  (https://www.cdc.gov/brfss/annual_data/2015/pdf/codebook15_llcp.pdf)
+Additional binning for age, income scale and education level were not done by the group.  These elements were already binned in the source data, with those bins being defined in the Codebook associated with the original dataset.  (https://www.cdc.gov/brfss/annual_data/2015/pdf/codebook15_llcp.pdf)
 
 ### Database Construction
 The team consulted with Kristina regarding the development of a database.  They were advised at that time that no free standing database would be needed for their project and that CSV files could be used without penalty. 
 
-## Machine Learning 
-The Machine Learning model is currently in design and development.  It will be included in week two. 
+### Machine Learning Model 
+As part of the project work, the team reviewed various  Machine Learning models to use as part of the decision process the final project would employ.  
+
+#### Linear Regression Model 
+The linear regression model tested by the team returned an 84.24% accuracy when executed against the dataset.  The confusion matrix and classification report showed the following: 
+
+[INSERT IMAGE - LRM_one.jpg]
+
+
+#### Decision Tree Model
+The decision tree model tested by the team returned a 77.55% accuracy when executed against the dataset.  The confusion matrix and classification report showed the following: 
+
+[Insert Image - DTM_one.jpg]
+
+
+#### Random Forest Classifier 
+The random forest classifier model tested by the team returned an accuracy score of 84.07% when executed against the dataset.  The confusion matrix and classification report showed the following: 
+
+[Insert Image - RDT_one.jpg]
+
+This model also returned a list of features that showed that age, income, general health, education and BMI range being the highest importances in whether or not a person has diabetes.   Due to this accuracy score and the feature listing that closely  matches the correlation returned during the data exploration phase, the team is considering using this model as part of the final refinement of the project. 
+
+#### Performance Optimization 
+The team is continuing to review and enhance the performance of each model prior to making a final selection.  The team will also be processing each of the different data files created during the pre-processing phase of the project to determine if that factors into the model decision c hoice. 
+
+### Interactive Site Building 
+While the Machine Learning model was being built, the initial site build was occurring in parallel.  The team utilized HTML, CSS and JavaScript to build what is displayed below: 
+
+[Insert Image - InitialSiteBuild.jpg]
+
+This site utilizes a Bootstrap accordion framework to expand and collapse various sections and utilize the available space on the page efficiently.   When the accordion section is expanded, it shows interactive sections that display visualizations, or allow a user to answer questions that will be processed through the Machine Learning model for predictions. 
+
+[Insert Image - Visualizations.jpg]
+
+[Insert Image - Survey.jpg]
+
+#### Background Functionality 
+The team is currently working on implementing Flask to host the site and pass survey answers and results between the Python scripts and the site where necessary.  This is anticipated to be completed during class on 1/30 or 2/1.  
+
+
+
+
+
+
+
+
 
 
 
