@@ -13,6 +13,16 @@ body {
      
 }
 
+.submitbutton {
+    margin: 0;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+
 /* {
   "header": "ui-icon-triangle-1-e",
   "activeHeader": "ui-icon-triangle-1-s"
