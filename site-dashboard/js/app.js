@@ -28,7 +28,7 @@ var DiffWalk = document.getElementById("DiffWalk");
 
 jsonbtn.addEventListener("click", function(){
     var data = {
-        "Sex":Sex.value,
+        "Sex":parseFloat(Sex.value),
         "HighBP":HighBP.value,
         "CholCheck":CholCheck.value,
         "HighChol":HighChol.value,
@@ -50,7 +50,8 @@ jsonbtn.addEventListener("click", function(){
         "HeartDiseaseorAttack":HeartDiseaseorAttack.value,
         "DiffWalk":DiffWalk.value,
     }
-    jsontext.innerHTML = JSON.stringify(data)
+
+    jsontext = JSON.stringify(data)
             console.log(data);
             console.log(jsontext);
 });
