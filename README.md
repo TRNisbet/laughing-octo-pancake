@@ -132,13 +132,13 @@ The team is continuing to review and enhance the performance of each model prior
 ### Interactive Site Building 
 While the Machine Learning model was being built, the initial site build was occurring in parallel.  The team utilized HTML, CSS and JavaScript to build what is displayed below: 
 
-![alt text](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/InitialSiteBuild.jpg)
+[![alt text]](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/InitalSiteBuild.jpg)
 
 This site utilizes a Bootstrap accordion framework to expand and collapse various sections and utilize the available space on the page efficiently.   When the accordion section is expanded, it shows interactive sections that display visualizations, or allow a user to answer questions that will be processed through the Machine Learning model for predictions. 
 
-![alt text](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/Visualizations.jpg)
+![alt text](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/visualizations.jpg)
 
-![alt text](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/Survey.jpg)
+![alt text](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/survey.jpg)
 
 #### Background Functionality 
 The team is currently working on implementing Flask to host the site and pass survey answers and results between the Python scripts and the site where necessary.  This is anticipated to be completed during class on 1/30 or 2/1.  
