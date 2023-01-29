@@ -1,8 +1,8 @@
 console.log("linked");
 var coll = document.getElementsByClassName("collapsible");
 var i;
-var jsonBtn = document.getElementById("jsonbtn");
-var jsonText = document.getElementById("jsontext");
+var jsonbtn = document.getElementById("jsonbtn");
+var jsontext = document.getElementsByName("jsontext");
 var CholCheck = document.getElementById("CholCheck");
 var Sex = document.getElementById("Sex");
 var HighBP = document.getElementById("HighBP");
@@ -26,7 +26,7 @@ var HeartDiseaseorAttack = document.getElementById("HeartDiseaseorAttack");
 var DiffWalk = document.getElementById("DiffWalk");
 
 
-jsonBtn.addEventListener("click", function(){
+jsonbtn.addEventListener("click", function(){
     var data = {
         "Sex":Sex.value,
         "HighBP":HighBP.value,
@@ -50,9 +50,10 @@ jsonBtn.addEventListener("click", function(){
         "HeartDiseaseorAttack":HeartDiseaseorAttack.value,
         "DiffWalk":DiffWalk.value,
     }
-    jsonText.innerHTML = JSON.stringify(data)
+    jsontext.innerHTML = JSON.stringify(data)
             console.log(data);
-})
+            console.log(jsontext);
+});
 
 
 $('.panel-collapse').on('show.bs.collapse', function () {

@@ -16,18 +16,6 @@ var HighBP = document.getElementById("HighBP")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 var jsonBtn = document.getElementById("jsonbtn")
 var jsonText = document.getElementById("jsontext")
 
