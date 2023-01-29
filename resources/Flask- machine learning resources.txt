@@ -1,0 +1,8 @@
+Resources for machine learning web application using flask
+Some resources found- 
+https://www.geeksforgeeks.org/deploy-machine-learning-model-using-flask/amp/
+
+
+https://towardsdatascience.com/building-a-machine-learning-web-application-using-flask-29fa9ea11dac
+
+Identified these resources but they have a simple html and will further attempt practising this on diabetes screening html 
