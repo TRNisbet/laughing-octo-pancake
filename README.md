@@ -111,19 +111,18 @@ As part of the project work, the team reviewed various  Machine Learning models 
 #### Linear Regression Model 
 The linear regression model tested by the team returned an 84.24% accuracy when executed against the dataset.  The confusion matrix and classification report showed the following: 
 
-![alt text]([image.jpg](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/LRM_one.jpg))
-
+![alt text](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/LRM_one.jpg)
 
 #### Decision Tree Model
 The decision tree model tested by the team returned a 77.55% accuracy when executed against the dataset.  The confusion matrix and classification report showed the following: 
 
-![alt text]([image.jpg](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/DTM_one.jpg))
+![alt text](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/DTM_one.jpg)
 
 
 #### Random Forest Classifier 
 The random forest classifier model tested by the team returned an accuracy score of 84.07% when executed against the dataset.  The confusion matrix and classification report showed the following: 
 
-![alt text]([image.jpg](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/RDT_one.jpg))
+![alt text](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/RDT_one.jpg)
 
 This model also returned a list of features that showed that age, income, general health, education and BMI range being the highest importances in whether or not a person has diabetes.   Due to this accuracy score and the feature listing that closely  matches the correlation returned during the data exploration phase, the team is considering using this model as part of the final refinement of the project. 
 
@@ -133,13 +132,13 @@ The team is continuing to review and enhance the performance of each model prior
 ### Interactive Site Building 
 While the Machine Learning model was being built, the initial site build was occurring in parallel.  The team utilized HTML, CSS and JavaScript to build what is displayed below: 
 
-![alt text]([image.jpg](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/InitialSiteBuild.jpg))
+![alt text](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/InitialSiteBuild.jpg)
 
 This site utilizes a Bootstrap accordion framework to expand and collapse various sections and utilize the available space on the page efficiently.   When the accordion section is expanded, it shows interactive sections that display visualizations, or allow a user to answer questions that will be processed through the Machine Learning model for predictions. 
 
-![alt text]([image.jpg](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/Visualizations.jpg))
+![alt text](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/Visualizations.jpg)
 
-![alt text]([image.jpg](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/Survey.jpg))
+![alt text](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/Survey.jpg)
 
 #### Background Functionality 
 The team is currently working on implementing Flask to host the site and pass survey answers and results between the Python scripts and the site where necessary.  This is anticipated to be completed during class on 1/30 or 2/1.  
