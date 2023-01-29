@@ -1,0 +1,66 @@
+Insert instead of: 
+A Simple Survey to determine if you should consider contacting your Health Care Provider about Diabetes Screening
+
+A set of questions that our Machine Learning model will use to determine if you should consider talking to your Health Care Provider
+
+
+_______________
+Currently, the CDC reports that more than 130 million adults are living with diabetes or prediabetes in the United States. With an estimated 8.5 million
+more who may be undiagnosed.   In order to know your status, it's important to work with your healthcare provider to discuss your current health status and
+other factors that may play a part in developing diabetes.  
+
+This site uses a machine learning model trained on data collected by the Centers for Disease Control to recommend whether or not you should talk to your provider.
+Please note, this site should not be used to diagnose Diabetes in any person, but should be used only as a tool to facilitate discussions with a healthcare professional.
+
+
+Centers for Disease Control and Prevention. National Diabetes Statistics Report website. 
+https://www.cdc.gov/diabetes/data/statistics-report/index.html. Accessed 1/27/2023].
+
+
+
+__________________________________________
+
+Text to put under Correlation with Diabetes Status 
+There are many things that contribute to a person developing diabetes and not all of them are ones you would think do.  This chart shows how various factors 
+correlate to the development of Diabetes. 
+
+Text to put under Diabetes Relationship to Age 
+People of any age may develop Diabetes.  However, risk increases as people age through thier 40s and 50s.  
+
+Text to put under Diabetes Relationship to Heavy Alcohol Consumption 
+Women who drink over 7 drinks a week, and men who drink over 14 drinks a week do not have a higher risk of Diabetes than those who do not consume alcohol heavily. 
+
+Text to put under Diabetes Relationship to BMI Range 
+A person's body weight is a contributing factor to developing Diabetes.  People who have a BMI (Body Mass Index) value higher than 30 have a higher risk of Diabetes
+than those who do not. 
+
+Text to put under Diabetes Relationship to Education 
+People who have not completed high school are at a higher risk of developing Diabetes than those who have. This is often associated with a person's income and the ability to 
+afford healthcare coverage and healthy foods at lower incomes. 
+
+Text to put under  Diabetes Relationship to Gender 
+There does not appear to be a significant difference in risk of developing Diabetes based on a person's gender. 
+
+Text to put under Diabetes Relationship to Reported General Health
+People who believe they are in fair, good or even very good health may not realize that they actually are at risk for Diabetes.  
+
+Text to put under Diabetes Relationship to High Blood Pressure
+People with high blood pressure have an increased risk at developing diabetes. 
+
+Text to put under Diabetes Relationship to High Cholesterol
+People with high cholesterol have an increased risk at developing diabetes.
+
+Text to put under Diabetes Relationship to Income
+People with lower incomes have an increased risk at developing diabetes. This is often associated with the inability to source healthy foods due to a person's income.
+
+Text to put under Survey Questions 
+Are you interested in determining your risk for developing diabetes?  Take a few minutes and answer the questions posed below.  When you click submit, our tool will review
+your answers, process them through our machine learning algorithm, and let you know if you should consider contacting your healthcare provider. 
+
+(Note: this site does not save any information or share any information.  Your answers are discarded as soon as you leave the site or refresh the page.  No PHI is being
+collected or used, and all information used in the training of our machine learning algorithm is de-identified data provided by the Centers for Disease Control.)
+
+
+
+Centers for Disease Control and Prevention. National Diabetes Statistics Report website. 
+https://www.cdc.gov/diabetes/data/statistics-report/index.html. Accessed 1/27/2023].
