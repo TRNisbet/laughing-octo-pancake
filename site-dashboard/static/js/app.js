@@ -55,15 +55,15 @@ jsonbtn.addEventListener("click", function(){
             console.log(data);
             console.log(jsontext);
 
-localStorage.setItem('jsontext2', jsontext);
-  // var textToSave = jsontext;
-  // var hiddenElement = document.createElement('a');
+    localStorage.setItem('jsontext', jsontext);
+    // var textToSave = jsontext;
+    // var hiddenElement = document.createElement('a');
 
-  // hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
-  // hiddenElement.target = '_blank';
-  // // hiddenElement.download = 'surveyExport.json';
-  // localStorage.setItem('jsontext', jsontext);
-  // hiddenElement.click();
+    // hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
+    // hiddenElement.target = '_blank';
+    // // hiddenElement.download = 'surveyExport.json';
+    // localStorage.setItem('jsontext', jsontext);
+    // hiddenElement.click();
 
 });
 
