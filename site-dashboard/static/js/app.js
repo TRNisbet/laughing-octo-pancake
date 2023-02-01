@@ -33,7 +33,7 @@ jsonbtn.addEventListener("click", function(){
         "CholCheck":parseFloat(CholCheck.value),
         "HighChol":parseFloat(HighChol.value),
         "PhysActivity":parseFloat(PhysActivity.value),
-        "HvyAlcoholConsumP":parseFloat(HighBP.value),       
+        "HvyAlcoholConsump":parseFloat(HighBP.value),       
         "AnyHealthcare":parseFloat(AnyHealthcare.value),    
         "Education":parseFloat(Education.value),
         "GenHlth":parseFloat(GenHlth.value),           
