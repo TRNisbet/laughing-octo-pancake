@@ -1,6 +1,6 @@
 # Import libraries
 from flask import Flask
-from sqlalchemy import create_engine
+
 
 
 
@@ -15,23 +15,26 @@ app = Flask(__name__)
 # engine = create_engine("json_file")
 
 # Instantiate Flask
-app = Flask('diabetes_predict')
+# app = Flask('diabetes_predict')
 
 # session = Session(engine)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 
-def testing():
-    # return html
+def home():
     return html
-    
+
+# Set debugging mode
+if __name__ == "__main__":
+    app.run(debug=True)
+
     # f(HTML_File)
     # f"Welcome<br/>"
     # f"Available Routes:<br/>" 
     # f"/json object to feed into model<br/>"
     # f"/result to feed into html<br/>"
 
-    
+
     
 
 # @app.route("/api/v1.0/json_object")
