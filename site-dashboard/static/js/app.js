@@ -24,7 +24,6 @@ var Smoker = document.getElementById("Smoker");
 var Stroke = document.getElementById("Stroke");
 var HeartDiseaseorAttack = document.getElementById("HeartDiseaseorAttack");
 var DiffWalk = document.getElementById("DiffWalk");
-var token = {};
 
 jsonbtn.addEventListener("click", function(){
     var data = {
@@ -57,7 +56,6 @@ jsonbtn.addEventListener("click", function(){
 
 
 sessionStorage.setItem('jsontext', jsontext);
-token = jsontext;
   var textToSave = jsontext;
   var hiddenElement = document.createElement('a');
 
