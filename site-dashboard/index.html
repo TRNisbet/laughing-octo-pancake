@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diabtetes Screening</title>
+    <title>Diabetes Screening</title>
     <link rel="stylesheet" href=./static/css/style.css>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" async></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -38,13 +38,6 @@
                         <div id="demo" class="collapse">
                             <div id="graph" class="carousel slide" data-ride="carousel" data-interval="false">
 
-                                <!-- Indicators -->
-                                <!-- <ul class="carousel-indicators">
-                                  <li data-target="#graph" data-slide-to="0" class="active"></li>
-                                  <li data-target="#graph" data-slide-to="1"></li>
-                                  <li data-target="#graph" data-slide-to="2"></li>
-                                </ul> -->
-                                
                                 <!-- The slideshow -->
                                 <div class="carousel-inner">
                                     <div class="carousel-item active graphcenter">
@@ -105,11 +98,7 @@
                                 </a>
                                                     
                             </div>
-                        
-                        
-                
-                        
-                        <!-- <a class="btn btn-info" data-target="#demo"data-toggle="collapse">Submit</a> -->
+                       
                         </div>
                       </div>
                      <div class="container">
@@ -135,7 +124,7 @@
                                         </select> 
                                     <br>
                                
-                                    <label for="HighChol">2. Do you have high Cholesterol</label>
+                                    <label for="HighChol">2. Do you have high Cholesterol?</label>
                                     <br>
                                         <select name="HighChol" id="HighChol">
                                           <option value="-1">Select</option>
@@ -191,7 +180,7 @@
                                       </select>
                                       <br>
                                     
-                                    <label for="PhysActivity"8. >Have you had physical activity within the last 30 days?</label>
+                                    <label for="PhysActivity">8. Have you had physical activity within the last 30 days?</label>
                                     <br>
                                       <select name="PhysActivity" id="PhysActivity">
                                         <option value="-1">Select</option>
@@ -227,14 +216,6 @@
                                       </select>
                                       <br>
 
-                                      <label for="AnyHealthcare">12. Do you have any Insurance or Healthcare coverage?</label>
-                                      <br>
-                                      <select name="AnyHealthcare" id="AnyHealthcare">
-                                        <option value="-1">Select</option>
-                                        <option value="0">No</option>
-                                        <option value="1">Yes</option>
-                                      </select>
-                                      <br>
                            </div>
                            
                            <div class = "col-6">
@@ -269,7 +250,7 @@
                                       </select>
                                       <br>
 
-                                    <label for="Mental_Health_Range">15. In the past 30 days, how many days was your physical health not good</label>
+                                    <label for="Mental_Health_Range">15. In the past 30 days, how many days was your mental health not good?</label>
                                     <br>
                                       <select name="Mental_Health_Range" id="Mental_Health_Range">
                                         <option value="-1">Select</option>
@@ -283,7 +264,7 @@
                                       </select>
                                       <br>
                                     
-                                    <label for="Physical_Health_Range">16. In the past 30 days, how many days was your physical health not good</label>
+                                    <label for="Physical_Health_Range">16. In the past 30 days, how many days was your physical health not good?</label>
                                     <br>
                                       <select name="Physical_Health_Range" id="Physical_Health_Range">
                                         <option value="-1">Select</option>
@@ -306,7 +287,7 @@
                                       </select>
                                       <br>
 
-                                      <label for="Sex">18. Select your gender</label>
+                                      <label for="Sex">18. Select your gender?</label>
                                       <br>
                                         <select name="Sex" id="Sex">
                                           <option value="-1">Select</option>
@@ -327,9 +308,11 @@
                                             <option value="6">45-49</option>
                                             <option value="7">50-54</option>
                                             <option value="8">55-59</option>
-                                            <option value="8">55-59</option>
-                                            <option value="8">55-59</option>
-                                            <option value="8">55-59</option>
+                                            <option value="9">60-64</option>
+                                            <option value="10">65-69</option>
+                                            <option value="11">70-74</option>
+                                            <option value="12">75-79</option>
+                                            <option value="13">80+</option>
                                           </select>
                                           <br>
                                         
@@ -359,15 +342,12 @@
                                             <option value="8">More than $75,001</option>
                                           </select>
                                           <br>
-                                      <!-- <button id="jsonbtn">Submit</button>
-                                      <p id="jsontext"></p> -->
 
                            </div>
                           
                            <div class="text-center">
                              <button id="jsonbtn" class="submitbutton btn btn-success">Submit</button>
-                                 <!-- <p name="jsontext"></p> -->
-                               
+                                                           
                               </div>
                             </div>
 
@@ -383,42 +363,6 @@
         </div>
     </div>
 </div>
-
-
-<!-- Link for callapse able section of html 
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>

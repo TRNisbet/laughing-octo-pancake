@@ -25,7 +25,6 @@ var Stroke = document.getElementById("Stroke");
 var HeartDiseaseorAttack = document.getElementById("HeartDiseaseorAttack");
 var DiffWalk = document.getElementById("DiffWalk");
 
-
 jsonbtn.addEventListener("click", function(){
     var data = {
         "Sex":parseFloat(Sex.value),
@@ -33,7 +32,7 @@ jsonbtn.addEventListener("click", function(){
         "CholCheck":parseFloat(CholCheck.value),
         "HighChol":parseFloat(HighChol.value),
         "PhysActivity":parseFloat(PhysActivity.value),
-        "HvyAlcoholConsumP":parseFloat(HighBP.value),       
+        "HvyAlcoholConsump":parseFloat(HighBP.value),       
         "AnyHealthcare":parseFloat(AnyHealthcare.value),    
         "Education":parseFloat(Education.value),
         "GenHlth":parseFloat(GenHlth.value),           
@@ -55,15 +54,17 @@ jsonbtn.addEventListener("click", function(){
             console.log(data);
             console.log(jsontext);
 
-localStorage.setItem('jsontext2', jsontext);
-  // var textToSave = jsontext;
-  // var hiddenElement = document.createElement('a');
 
-  // hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
-  // hiddenElement.target = '_blank';
-  // // hiddenElement.download = 'surveyExport.json';
-  // localStorage.setItem('jsontext', jsontext);
-  // hiddenElement.click();
+sessionStorage.setItem('jsontext', jsontext);
+  var textToSave = jsontext;
+  var hiddenElement = document.createElement('a');
+
+
+    hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
+    hiddenElement.target = '_blank';
+    // hiddenElement.download = 'surveyExport.json';
+    localStorage.setItem('jsontext', jsontext);
+    hiddenElement.click();
 
 });
 
