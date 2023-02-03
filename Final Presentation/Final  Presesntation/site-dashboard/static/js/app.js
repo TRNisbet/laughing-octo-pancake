@@ -1,6 +1,6 @@
 console.log("linked");
-var coll = document.getElementsByClassName("collapsible");
-var i;
+// var coll = document.getElementsByClassName("collapsible");
+// var i;
 var jsonbtn = document.getElementById("jsonbtn");
 var jsontext = document.getElementsByName("jsontext");
 var CholCheck = document.getElementById("CholCheck");
@@ -8,7 +8,7 @@ var Sex = document.getElementById("Sex");
 var HighBP = document.getElementById("HighBP");
 var HighChol = document.getElementById("HighChol");
 var PhysActivity = document.getElementById("PhysActivity");
-var HvyAlcoholConsum = document.getElementById("HvyAlcoholConsum");
+var HvyAlcoholConsump = document.getElementById("HvyAlcoholConsump");
 var AnyHealthcare = document.getElementById("AnyHealthcare");
 var Education = document.getElementById("Education");
 var GenHlth = document.getElementById("GenHlth");
@@ -24,6 +24,7 @@ var Smoker = document.getElementById("Smoker");
 var Stroke = document.getElementById("Stroke");
 var HeartDiseaseorAttack = document.getElementById("HeartDiseaseorAttack");
 var DiffWalk = document.getElementById("DiffWalk");
+var machineLearningResult = 0;
 
 jsonbtn.addEventListener("click", function(){
     var data = {
@@ -32,7 +33,7 @@ jsonbtn.addEventListener("click", function(){
         "CholCheck":parseFloat(CholCheck.value),
         "HighChol":parseFloat(HighChol.value),
         "PhysActivity":parseFloat(PhysActivity.value),
-        "HvyAlcoholConsump":parseFloat(HighBP.value),       
+        "HvyAlcoholConsump":parseFloat(HvyAlcoholConsump.value),       
         "AnyHealthcare":parseFloat(AnyHealthcare.value),    
         "Education":parseFloat(Education.value),
         "GenHlth":parseFloat(GenHlth.value),           
@@ -56,19 +57,35 @@ jsonbtn.addEventListener("click", function(){
 
 
 sessionStorage.setItem('jsontext', jsontext);
-  var textToSave = jsontext;
-  var hiddenElement = document.createElement('a');
-
-
-    hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
-    hiddenElement.target = '_blank';
+     
+    // var textToSave = jsontext;
+    // var hiddenElement = document.createElement('a');
+    // hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
+    // hiddenElement.target = '_blank';
     // hiddenElement.download = 'surveyExport.json';
-    localStorage.setItem('jsontext', jsontext);
-    hiddenElement.click();
+    // hiddenElement.click();
 
+
+    console.log(jsontext); 
+    localStorage.setItem('jsontext', jsontext);
 });
 
 
+
+surveybtn.addEventListener("click", function Func() {
+        fetch('./results/results.json')
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            machineLearningResult = data.result[0];
+            console.log(machineLearningResult);
+            document.getElementById('im1').src = './static/images/result'+ machineLearningResult + '.jpg';
+           
+        });
+
+});
+console.log(machineLearningResult);
 
 $('.panel-collapse').on('show.bs.collapse', function () {
   $(this).siblings('.panel-heading').addClass('active');
