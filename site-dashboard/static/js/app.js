@@ -8,7 +8,7 @@ var Sex = document.getElementById("Sex");
 var HighBP = document.getElementById("HighBP");
 var HighChol = document.getElementById("HighChol");
 var PhysActivity = document.getElementById("PhysActivity");
-var HvyAlcoholConsum = document.getElementById("HvyAlcoholConsum");
+var HvyAlcoholConsump = document.getElementById("HvyAlcoholConsump");
 var AnyHealthcare = document.getElementById("AnyHealthcare");
 var Education = document.getElementById("Education");
 var GenHlth = document.getElementById("GenHlth");
@@ -24,6 +24,7 @@ var Smoker = document.getElementById("Smoker");
 var Stroke = document.getElementById("Stroke");
 var HeartDiseaseorAttack = document.getElementById("HeartDiseaseorAttack");
 var DiffWalk = document.getElementById("DiffWalk");
+var machineLearningResult;
 
 jsonbtn.addEventListener("click", function(){
     var data = {
@@ -32,7 +33,7 @@ jsonbtn.addEventListener("click", function(){
         "CholCheck":parseFloat(CholCheck.value),
         "HighChol":parseFloat(HighChol.value),
         "PhysActivity":parseFloat(PhysActivity.value),
-        "HvyAlcoholConsump":parseFloat(HighBP.value),       
+        "HvyAlcoholConsump":parseFloat(HvyAlcoholConsump.value),       
         "AnyHealthcare":parseFloat(AnyHealthcare.value),    
         "Education":parseFloat(Education.value),
         "GenHlth":parseFloat(GenHlth.value),           
@@ -56,17 +57,60 @@ jsonbtn.addEventListener("click", function(){
 
 
 sessionStorage.setItem('jsontext', jsontext);
-  var textToSave = jsontext;
-  var hiddenElement = document.createElement('a');
+  // var textToSave = jsontext;
+  // var hiddenElement = document.createElement('a');
 
+      console.log(jsontext);
 
-    hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
-    hiddenElement.target = '_blank';
+    // hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
+    // hiddenElement.target = '_blank';
     // hiddenElement.download = 'surveyExport.json';
     localStorage.setItem('jsontext', jsontext);
-    hiddenElement.click();
+    // hiddenElement.click();
 
 });
+
+
+
+surveybtn.addEventListener("click", function Func() {
+
+        fetch('../results/results.json')
+          .then((res) => {
+            return res.json();
+          })
+          // .then((data) => {console.log(data.result[0])       
+          // });
+
+
+        .then((data) => {
+
+        //   machineLearningResult = data
+        // console.log(machineLearningResult);
+        machineLearningResult = data.result[0];
+        console.log(machineLearningResult);
+
+           });
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
