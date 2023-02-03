@@ -89,6 +89,27 @@ surveybtn.addEventListener("click", function Func() {
         machineLearningResult = data.result[0];
         console.log(machineLearningResult);
 
+
+          var e = 1;
+          // changei(e);
+          // something  changed e in e = 0;
+          // changei(e);
+
+          function changei(e) {
+            var loc = '';
+            if (e==1) {
+                loc = './static/images/LRM_one.jpg';
+            } else {
+                loc = './static/images/Get_Tested.jpg';
+            }
+            $('#im1').attr("src",loc); // change image source
+}
+
+        // Ouside code to remoce a class on a click, not sure it will help 
+                // $(".modal-background").click(function() {
+                // $(".modal").removeClass("is-active");
+                // });
+
            });
 
 });
