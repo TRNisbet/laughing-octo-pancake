@@ -43,6 +43,16 @@ body {
     margin: 0 auto; 
 }
 
+/* TESTING IDEAS TO SEE IF THE FOR LOOP IS WORKING 
+FOR THE DISPLAY OF THE MACHING LEARNNG RESULTS */
+#resultDoctor {
+    color: #f10909;
+}
+
+#resultNoDoctor {
+        color: #9809f1;
+    }
+
 /* hr {
     border-style: dotted none none;
     border-color: #94B49F;
