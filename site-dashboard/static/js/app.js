@@ -1,6 +1,6 @@
 console.log("linked");
-var coll = document.getElementsByClassName("collapsible");
-var i;
+// var coll = document.getElementsByClassName("collapsible");
+// var i;
 var jsonbtn = document.getElementById("jsonbtn");
 var jsontext = document.getElementsByName("jsontext");
 var CholCheck = document.getElementById("CholCheck");
@@ -24,7 +24,7 @@ var Smoker = document.getElementById("Smoker");
 var Stroke = document.getElementById("Stroke");
 var HeartDiseaseorAttack = document.getElementById("HeartDiseaseorAttack");
 var DiffWalk = document.getElementById("DiffWalk");
-var machineLearningResult;
+var machineLearningResult = 0;
 
 jsonbtn.addEventListener("click", function(){
     var data = {
@@ -57,17 +57,17 @@ jsonbtn.addEventListener("click", function(){
 
 
 sessionStorage.setItem('jsontext', jsontext);
-  // var textToSave = jsontext;
-  // var hiddenElement = document.createElement('a');
-
-      console.log(jsontext);
-
+     
+    // var textToSave = jsontext;
+    // var hiddenElement = document.createElement('a');
     // hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
     // hiddenElement.target = '_blank';
     // hiddenElement.download = 'surveyExport.json';
-    localStorage.setItem('jsontext', jsontext);
     // hiddenElement.click();
 
+
+    console.log(jsontext); 
+    localStorage.setItem('jsontext', jsontext);
 });
 
 
@@ -78,61 +78,14 @@ surveybtn.addEventListener("click", function Func() {
           .then((res) => {
             return res.json();
           })
-          // .then((data) => {console.log(data.result[0])       
-          // });
-
 
         .then((data) => {
-
-        //   machineLearningResult = data
-        // console.log(machineLearningResult);
-        machineLearningResult = data.result[0];
-        console.log(machineLearningResult);
-
-
-          var e = 1;
-          // changei(e);
-          // something  changed e in e = 0;
-          // changei(e);
-
-          function changei(e) {
-            var loc = '';
-            if (e==1) {
-                loc = './static/images/LRM_one.jpg';
-            } else {
-                loc = './static/images/Get_Tested.jpg';
-            }
-            $('#im1').attr("src",loc); // change image source
-}
-
-        // Ouside code to remoce a class on a click, not sure it will help 
-                // $(".modal-background").click(function() {
-                // $(".modal").removeClass("is-active");
-                // });
-
-           });
+          machineLearningResult = data.result[0];
+          console.log(machineLearningResult);
+          document.getElementById('im1').src = './static/images/result'+ machineLearningResult + '.jpg';
+        });
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 $('.panel-collapse').on('show.bs.collapse', function () {
