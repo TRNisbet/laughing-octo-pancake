@@ -1,0 +1,10 @@
+#calc-container {
+  padding: 10px;
+}
+
+/* hide results until after calculation */
+#bmi-results {
+  display: none;
+  padding: 30px;
+  border: 1px solid Black;
+}
