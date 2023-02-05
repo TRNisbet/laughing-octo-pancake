@@ -87,6 +87,7 @@ The team determined that they would process the original dataset three different
 - Raw Data - No duplicates were removed from the data, and binning was done on identified columns. (Data Processing - Raw Data Notebook)
 - Sample One - Duplicates were identified and removed prior to binning being done.  (Data Processing - Sample One Notebook)
 - Sample Two - Duplicates were identified and removed after binning was complete. (Data Processing - Sample Two Notebook)
+These files were run through the models and there was no difference in results.  The team determined that it would be best to run a file where binning was done and no duplicate records were returned. 
 
 ### Binning 
 Due to the nature of the data in the dataset, the team decided that binning on selected columns was appropriate.  Binning was done as indicated below 
@@ -124,10 +125,14 @@ The random forest classifier model tested by the team returned an accuracy score
 
 ![alt text](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/RDT_one.jpg)
 
-This model also returned a list of features that showed that age, income, general health, education and BMI range being the highest importances in whether or not a person has diabetes.   Due to this accuracy score and the feature listing that closely  matches the correlation returned during the data exploration phase, the team is considering using this model as part of the final refinement of the project. 
+This model also returned a list of features that showed that age, income, general health, education and BMI range being the highest importances in whether or not a person has diabetes.   Due to this accuracy score and the feature listing that closely  matches the correlation returned during the data exploration phase, the team chose to use this model as part of the final refinement of the project. 
 
-#### Performance Optimization 
+#### Performance Optimization and Analysis
 The team is continuing to review and enhance the performance of each model prior to making a final selection.  The team will also be processing each of the different data files created during the pre-processing phase of the project to determine if that factors into the model decision c hoice. 
+
+After review and enhancement of the Random Forest Classifier model, the team determined that while the percentage of accuracy was high, the model did not accurately predict a patient being at risk of diabetes as accurately as hoped.  After the model was built, a subset of data with known results were run through the model and did not return the same results.  This is most likely due to the dataset being heavier in the 'not at risk' category weighing the model more heavily in that direction.  The training set run through the model had 50677 records accurately scored at 'not at risk' and 2264 scored 'at risk' while 7730 were falsely identified to be at risk and 2749 were falsely identified to be 'not at risk'.  Additional analysis into the source dataset training the model should be done in order to ensure that the model does not skew more towards 'not at risk'. 
+
+For the purpose of this project however, a successful machine learning model is encouraging, and it is felt that a more accuracte prediction model is possible. 
 
 ### Interactive Site Building 
 While the Machine Learning model was being built, the initial site build was occurring in parallel.  The team utilized HTML, CSS and JavaScript to build what is displayed below: 
@@ -140,8 +145,18 @@ This site utilizes a Bootstrap accordion framework to expand and collapse variou
 
 ![alt text](https://github.com/TRNisbet/laughing-octo-pancake/blob/main/Images/survey.jpg)
 
-#### Background Functionality 
-The team is currently working on implementing Flask to host the site and pass survey answers and results between the Python scripts and the site where necessary.  This is anticipated to be completed during class on 1/30 or 2/1.  
+### Background Functionality 
+Flask and Ajax were utilized by the team to build the interactive site.  The site is active within a Flask environment, and when the end user selects values from the survey and clicks submit, the python code in the app.py file is triggered to run the prediciton  model and return results.  Thes results are displayed on the screen for the user. 
+
+### Future Work 
+For future work on this project, the team has the following goals: 
+    - Improve the Machine Learning model to more accurately predict true positive and negative results 
+    - Add additional resources and documentation to the site for informational resources for end users. 
+    
+### Code Availability 
+Code for this project can be found in the following directory in this repository: [Final Project 02032023](https://github.com/TRNisbet/laughing-octo-pancake/tree/main/FInal_presentation_02032023)
+   
+
 
 
 
