@@ -154,7 +154,7 @@ For future work on this project, the team has the following goals:
     - Add additional resources and documentation to the site for informational resources for end users. 
     
 ### Code Availability 
-Code for this project can be found in the following directory in this repository: [Final Project 02032023](https://github.com/TRNisbet/laughing-octo-pancake/tree/main/FInal_presentation_02032023)
+Code for this project can be found in the following directory in this repository: [Finished Project](https://github.com/TRNisbet/laughing-octo-pancake/tree/main/Finished_Project)
    
 
 
