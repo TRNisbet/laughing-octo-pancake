@@ -1,0 +1,36 @@
+<html>
+
+  <head>
+    <title>BMI-calculator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='my-style.css') }}"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="{{ url_for('static', filename='bmi-calc.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+  <div id="calc-container">
+    <h1>BMI calculator</h1>
+    <p>Please enter details to calculate the BMI:</p>
+    <label>Enter height, in inches:</label>
+    <input type="number" name="height" id="height">
+    <br><br>
+    <label>Enter weight, in pounds:</label>
+    <input type="number" name="weight" id="weight">
+    </br><br>
+    <input type="submit" name="next" value="Next"
+     onclick="calculateBMI();">
+  </div>
+
+  <br><br>
+  <div id="bmi-results">
+    <h2>Results</h2>
+    <p>Calculated BMI = <span id="bmi"></span>.
+    <br>This is classified as <strong><span id="category"></span>.
+  </div>
+
+  </body>
+</html>
