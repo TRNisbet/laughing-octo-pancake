@@ -1,0 +1,384 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Screening</title>
+    <link rel="stylesheet" href=./static/style.css>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" async></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+    
+
+  </head>
+<body>
+    
+<div class="container">
+    <div class="row">
+            <div class="col-md-12 jumbotron text-center">
+                <h1 class="display-, text-center">Machine Learning Diabetes Project Site</h1>
+            </div>
+            
+
+            <div class="col-md-12 text-center">
+                <p class="lead, text-center" >
+                  Currently, the CDC reports that more than 130 million adults are living with diabetes or prediabetes in the United States. With an estimated 8.5 million
+                  more who may be undiagnosed.   In order to know your status, it's important to work with your healthcare provider to discuss your current health status and
+                  other factors that may play a part in developing diabetes.  </p>
+                    <p class="text-center">This site uses a machine learning model trained on data collected by the Centers for Disease Control to recommend whether or not you should talk to your provider.
+                      Please note, this site should not be used to diagnose Diabetes in any person, but should be used only as a tool to facilitate discussions with a healthcare professional.</p>
+            </div>
+    <!-- Start of the buttons -->
+        <div class="col-md-12 text-center">
+                   <div class="container">
+                        <h2></h2>
+                        <a class="btn btn-info " data-toggle="collapse" data-target="#demo">Factors that Contribute to Diabetes</a>
+                        <div id="demo" class="collapse">
+                            <div id="graph" class="carousel slide" data-ride="carousel" data-interval="false">
+
+                                <!-- The slideshow -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active graphcenter">
+                                        <img src=../static/images/chart_of_correlations.jpg alt="Chart of Correlations" style="width:100%">
+                                        <p>There are many things that contribute to a person developing diabetes and not all of them are ones you would think do.  This chart shows how various factors 
+                                          correlate to the development of Diabetes.</p>
+                                      </div>
+                                  <div class="carousel-item">
+                                    <img src=../static/images/age_v_diabetes.jpg alt="Age Relation to Diabetes" style="width:100%">
+                                    <p>People of any age may develop Diabetes.  However, risk increases as people age through thier 40s and 50s.</p>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src=../static/images/alcohol_v_diabetes.jpg alt="Alcohol Relation to Diabetes" style="width:100%">
+                                    <p>Women who drink over 7 drinks a week, and men who drink over 14 drinks a week do not have a higher risk of Diabetes than those who do not consume alcohol heavily. 
+                                    </p>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src=../static/images/bmi_v_diabetes.jpg alt="BMI Relation to Diabetes" style="width:100%">
+                                    <p>A person's body weight is a contributing factor to developing Diabetes.  People who have a BMI (Body Mass Index) value higher than 30 have a higher risk of Diabetes
+                                      than those who do not. </p>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src=../static/images/education_v_diabetes.jpg alt="Education Relation to Diabetes" style="width:100%">
+                                    <p>People who have not completed high school are at a higher risk of developing Diabetes than those who have. This is often associated with a person's income and the ability to 
+                                      afford healthcare coverage and healthy foods at lower incomes.</p>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src=../static/images/gender_v_diabetes.jpg alt="Gender Relation to Diabetes" style="width:100%">
+                                    <p>There does not appear to be a significant difference in risk of developing Diabetes based on a person's gender. 
+                                    </p>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src=../static/images/genhlth_v_diabetes.jpg alt="General Health Relation to Diabetes" style="width:100%">
+                                    <p>People who believe they are in fair, good or even very good health may not realize that they actually are at risk for Diabetes.  
+                                    </p>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src=../static/images/hbp_v_diabetes.jpg alt="High Blood Pressure Relation to Diabetes" style="width:100%">
+                                    <p>People with high blood pressure have an increased risk at developing diabetes.</p>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src=../static/images/hchol_v_diabetes.jpg alt="High Cholesterol Relation to Diabetes" style="width:100%">
+                                    <p>People with high cholesterol have an increased risk at developing diabetes</p>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src=../static/images/income_v_diabetes.jpg alt="Income Relation to Diabetes" style="width:100%">
+                                    <p>People with lower incomes have an increased risk at developing diabetes. This is often associated with the inability to source healthy foods due to a person's income.
+                                      </p>
+                                  </div>
+                                </div>
+                                
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#graph" data-slide="prev">
+                                  <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#graph" data-slide="next">
+                                  <span class="carousel-control-next-icon"></span>
+                                </a>
+                                                    
+                            </div>
+                            <p>Are you interested in determining your risk for developing diabetes?  Take a few minutes and answer the questions posed below.  When you click submit, our tool will review
+                              your answers, process them through our machine learning algorithm, and let you know if you should consider contacting your healthcare provider. 
+                              
+                              (Note: this site does not save any information or share any information.  Your answers are discarded as soon as you leave the site or refresh the page.  No PHI is being
+                              collected or used, and all information used in the training of our machine learning algorithm is de-identified data provided by the Centers for Disease Control.)
+                              
+                              Click the button below, answer the questions, and click Submit.  Your results will be displayed below. 
+                              </p>
+                        </div>
+                      </div>
+                     <div class="container">
+                        <h2></h2>
+                        <a class="btn btn-info" data-toggle="collapse" data-target="#demo1">Assess Your Risk</a>
+                       
+                        <div id="demo1" class="collapse col-md-12">
+                            <div class="row">
+                             <div class = "col-6">
+
+                                    <label for="HighBP">1. Do you have high blood pressure?</label>
+                                    <br>
+                                        <select name="HighBP" id="HighBP">
+                                          <option value="-1">Select</option>
+                                          <option value="0">0. No</option>
+                                          <option value="1">1. Yes</option>
+                                        </select> 
+                                    <br>
+                               
+                                    <label for="HighChol">2. Do you have high Cholesterol?</label>
+                                    <br>
+                                        <select name="HighChol" id="HighChol">
+                                          <option value="-1">Select</option>
+                                          <option value="0">0. No</option>
+                                          <option value="1">1. Yes</option>
+                                        </select>                           
+                                        <br>
+                                    
+                                    <label for="CholCheck">3. Have you had a cholestrol check in the last 5 years? </label>
+                                    <br>
+                                        <select name="CholCheck" id="CholCheck">
+                                          <option value="-1">Select</option>
+                                          <option value="0">0. No</option>
+                                          <option value="1">1. Yes</option>
+                                        </select>
+                                        <br>
+
+                                    <label for="BMI_Range">4. What is your BMI range?</label>
+                                    <br>
+                                      <select name="BMI_Range" id="BMI_Range">
+                                        <option value="-1">Select</option>
+                                        <option value="1">1. 0-18.4</option>
+                                        <option value="2">2. 18.5-24.9</option>
+                                        <option value="3">3. 25.0-29.9</option>
+                                        <option value="4">4. 30.+</option>
+                                      </select>
+                                      <br>
+
+                                    <label for="Smoker">5. Are you a smoker?</label>
+                                    <br>
+                                    <select name="Smoker" id="Smoker">
+                                      <option value="-1">Select</option>
+                                      <option value="0">0. No</option>
+                                      <option value="1">1. Yes</option>
+                                    </select>
+                                    <br>
+
+                                    <label for="Stroke">6. Have you had a stroke?</label>
+                                    <br>
+                                    <select name="Stroke" id="Stroke">
+                                      <option value="-1">Select</option>
+                                      <option value="0">0. No</option>
+                                      <option value="1">1. Yes</option>
+                                    </select>
+                                    <br>
+
+                                    <label for="HeartDiseaseorAttack">7. Do you have heart disease or have you had a heart attack?</label>
+                                    <br>
+                                      <select name="HeartDiseaseorAttack" id="HeartDiseaseorAttack">
+                                        <option value="-1">Select</option>
+                                        <option value="0">0. No</option>
+                                        <option value="1">1. Yes</option>
+                                      </select>
+                                      <br>
+                                    
+                                    <label for="PhysActivity">8. Have you had physical activity within the last 30 days?</label>
+                                    <br>
+                                      <select name="PhysActivity" id="PhysActivity">
+                                        <option value="-1">Select</option>
+                                        <option value="0">0. No</option>
+                                        <option value="1">1. Yes</option>
+                                      </select>
+                                      <br>
+
+                                    <label for="Fruits">9. Do you eat fruits one or more times a day?</label>
+                                    <br>
+                                      <select name="Fruits" id="Fruits">
+                                        <option value="-1">Select</option>
+                                        <option value="0">0. No</option>
+                                        <option value="1">1. Yes</option>
+                                      </select>
+                                      <br>
+          
+                                    <label for="Veggies">10. Do you eat vegetables one or more times a day?</label>
+                                    <br>
+                                      <select name="Veggies" id="Veggies">
+                                        <option value="-1">Select</option>
+                                        <option value="0">0. No</option>
+                                        <option value="1">1. Yes</option>
+                                      </select>
+                                      <br>
+
+                                    <label for="HvyAlcoholConsump">11. Do you consume alcohol heavily?</label>
+                                    <br>
+                                      <select name="HvyAlcoholConsump" id="HvyAlcoholConsump">
+                                        <option value="-1">Select</option>
+                                        <option value="0">0. No</option>
+                                        <option value="1">1. Yes</option>
+                                      </select>
+                                      <br>
+
+                           </div>
+                           
+                           <div class = "col-6">
+
+                                    <label for="AnyHealthcare">12. Do you have any Insurance or Healthcare coverage?</label>
+                                    <br>
+                                      <select name="AnyHealthcare" id="AnyHealthcare">
+                                        <option value="-1">Select</option>
+                                        <option value="0">0. No</option>
+                                        <option value="1">1. Yes</option>
+                                      </select>
+                                      <br>
+
+                                    <label for="NoDocbcCost">13. In the past twelve months did you not see a doctor because of cost?</label>
+                                    <br>
+                                      <select name="NoDocbcCost" id="NoDocbcCost">
+                                        <option value="-1">Select</option>
+                                        <option value="0">0. No</option>
+                                        <option value="1">1 .Yes</option>
+                                      </select>
+                                      <br>
+
+                                    <label for="GenHlth">14. How would you describe your general health?</label>
+                                    <br>
+                                      <select name="GenHlth" id="GenHlth">
+                                        <option value="-1">Select</option>
+                                        <option value="1">1. Excellent</option>
+                                        <option value="2">2. Very Good</option>
+                                        <option value="3">3. Good</option>
+                                        <option value="4">4. Fair</option>
+                                        <option value="5">5. Poor</option>
+                                      </select>
+                                      <br>
+
+                                    <label for="Mental_Health_Range">15. In the past 30 days, how many days was your mental health not good?</label>
+                                    <br>
+                                      <select name="Mental_Health_Range" id="Mental_Health_Range">
+                                        <option value="-1">Select</option>
+                                        <option value="1">1. 0 Days</option>
+                                        <option value="2">2. 1-5 Days</option>
+                                        <option value="3">3. 6-10 Days</option>
+                                        <option value="4">4. 11-15 Days</option>
+                                        <option value="5">5. 16-20 Days</option>
+                                        <option value="6">6. 21-25 Days</option>
+                                        <option value="7">7. 26-30 Days</option>
+                                      </select>
+                                      <br>
+                                    
+                                    <label for="Physical_Health_Range">16. In the past 30 days, how many days was your physical health not good?</label>
+                                    <br>
+                                      <select name="Physical_Health_Range" id="Physical_Health_Range">
+                                        <option value="-1">Select</option>
+                                        <option value="1">1. 0 Days</option>
+                                        <option value="2">2. 1-5 Days</option>
+                                        <option value="3">3. 6-10 Days</option>
+                                        <option value="4">4. 11-15 Days</option>
+                                        <option value="5">5. 16-20 Days</option>
+                                        <option value="6">6. 21-25 Days</option>
+                                        <option value="7">7. 26-30 Days</option>
+                                      </select>
+                                      <br>
+
+                                    <label for="DiffWalk">17. Do you have difficulty walking or climbing stairs?</label>
+                                    <br>
+                                        <select name="DiffWalk" id="DiffWalk">
+                                        <option value="-1">Select</option>
+                                        <option value="0">0. No</option>
+                                        <option value="1">1. Yes</option>
+                                      </select>
+                                      <br>
+
+                                      <label for="Sex">18. Select your gender?</label>
+                                      <br>
+                                        <select name="Sex" id="Sex">
+                                          <option value="-1">Select</option>
+                                          <option value=1>0. Male</option>
+                                          <option value=0>1. Female</option>
+                                        </select>
+                                        <br>
+
+                                      <label for="Age">19. What is your Age Range?</label>
+                                      <br>
+                                          <select name="Age" id="Age">
+                                            <option value="-1">Select</option>
+                                            <option value="1">1. 18-24</option>
+                                            <option value="2">2. 25-29</option>
+                                            <option value="3">3. 30-34</option>
+                                            <option value="4">4. 35-39</option>
+                                            <option value="5">5. 40-44</option>
+                                            <option value="6">6. 45-49</option>
+                                            <option value="7">7. 50-54</option>
+                                            <option value="8">8. 55-59</option>
+                                            <option value="9">9. 60-64</option>
+                                            <option value="10">10. 65-69</option>
+                                            <option value="11">11. 70-74</option>
+                                            <option value="12">12. 75-79</option>
+                                            <option value="13">13. 80+</option>
+                                          </select>
+                                          <br>
+                                        
+                                        <label for="Education">20. What level of Education have you completed?</label>
+                                        <br>
+                                          <select name="Education" id="Education">
+                                            <option value="-1">Select</option>
+                                            <option value="1">1. Never Attended School</option>
+                                            <option value="2">2. Elementary</option>
+                                            <option value="3">3. Some High School</option>
+                                            <option value="4">4. High School Graduate</option>
+                                            <option value="5">5. Some college or technical school</option>
+                                            <option value="6">6. College or technical school graduate</option>
+                                          </select>
+                                          <br>
+
+                                        <label for="Income">21. What is your income?</label>
+                                        <br>
+                                          <select name="Income" id="Income">
+                                            <option value="-1">Select</option>
+                                            <option value="1">1. Less than $10,000</option>
+                                            <option value="2">2. Less than $15,000</option>
+                                            <option value="3">3. Less than $20,000</option>
+                                            <option value="4">4. Less than $25,000</option>
+                                            <option value="5">5. Less than $35,000</option>
+                                            <option value="6">6. Less than $50,000</option>
+                                            <option value="7">7. Less than $75,000</option>
+                                            <option value="8">8. More than $75,001</option>
+                                          </select>
+                                          <br>
+
+                           </div>
+                           </div>
+                           <div class="row">
+                           <div class="container text-center">
+                             <button id="jsonbtn" onclick="predictStatus();" class="submitbutton btn btn-success">Submit</button>
+                             <br>
+                             <br>
+                             <br>                              
+                              </div>
+                            </div>
+
+                      </div>
+                     <div class="container">
+                        <h2></h2>
+                        <a class="btn btn-info" data-toggle="collapse" data-target="#demo2">Results</a>
+                        <div id="demo2" class="collapse">
+                          <div>
+                            <br>
+                            <img id = "resultimage" src="/static/images/result0.jpg" style="width:100%">
+
+                          </div>
+                        </div>
+                      </div>
+           </div>
+        </div>
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" async></script>
+    <script src="{{ url_for('static', filename='diabetes_prediction.js') }}"></script>
+
+</html>

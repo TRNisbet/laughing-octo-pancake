@@ -1,0 +1,80 @@
+
+body {
+    background-color:#ebe8fc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.jumbotron {
+    background-image: url(images/test.jpg);
+    background-size: 25%;
+    text-align: center;
+    color:whitesmoke;
+    text-shadow: black 0.1em 0.1em 0.5em;
+     
+}
+
+.submitbutton {
+    margin: 0;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+
+/* {
+  "header": "ui-icon-triangle-1-e",
+  "activeHeader": "ui-icon-triangle-1-s"
+} */
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 100px;
+    width: 175px;
+    filter: invert(100%); 
+    /* outline: black; */
+    /* background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black; */
+}
+
+.graphcenter {
+    margin: 0 auto; 
+}
+
+/* hr {
+    border-style: dotted none none;
+    border-color: #94B49F;
+    border-width: 5px;
+    width: 7%;
+}
+
+.paragraph1 {
+    font-size: 20px;
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+} */
